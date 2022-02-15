@@ -10,8 +10,8 @@ jobs:
       - name: Comment pull request with API diff
         uses: atirnayab/test-ci-cd
         with:
-          doc: "absaf123312"
-          token: "asfadasf"
+          doc: absaf123312
+          token: asfadasf
           file: doc/api.yml
           command: diff
         env:
