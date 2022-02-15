@@ -9,7 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Comment pull request with API diff
-        uses: atirnayab/test-ci-cd@test
         with:
           doc: "doc/api.yml"
           token: "asdfdasfdas"
