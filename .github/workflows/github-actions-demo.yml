@@ -5,11 +5,8 @@ jobs:
     name: Check API diff
     runs-on: ubuntu-latest
     steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Comment pull request with API diff
-        uses: atirnayab/test-ci-cd@test
-        with:
-          file: doc/api.yml
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
