@@ -11,8 +11,8 @@ jobs:
       - name: Comment pull request with API diff
         uses: atirnayab/test-ci-cd@main
         with:
-          doc: "doc/api.yml"
-          token: "asdfdasfdas"
+          doc: doc/api.yml
+          token: asdfdasfdas
           file: doc/api.yml
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
