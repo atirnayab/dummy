@@ -8,6 +8,8 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Comment pull request with API diff
+        uses: atirnayab/test-ci-cd@main
         with:
           doc: "doc/api.yml"
           token: "asdfdasfdas"
