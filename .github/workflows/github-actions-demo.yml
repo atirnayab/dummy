@@ -12,7 +12,5 @@ jobs:
         uses: atirnayab/test-ci-cd@main
         with:
           doc: doc/api.yml
-          token: asdfdasfdas
+          token: ${{secrets.GITHUB_TOKEN}}
           file: doc/api.yml
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
