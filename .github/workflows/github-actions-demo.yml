@@ -14,3 +14,5 @@ jobs:
           doc: doc/api.yml
           token: ${{secrets.GITHUB_TOKEN}}
           file: doc/api.yml
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
