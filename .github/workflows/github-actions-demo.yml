@@ -15,4 +15,4 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
           file: doc/api.yml
           testtoken: ${{secrets.TESTTOKEN}}
-          testtoken2: ${{github.TESTTOKEN}}
+          testtoken2: ${{env.TESTTOKEN}}
