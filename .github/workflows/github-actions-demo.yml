@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo ${{github.token}}
+      - run: echo ${{secrets.GITHUB_TOKEN}}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Comment pull request with API diff
@@ -16,6 +18,3 @@ jobs:
           file: doc/api.yml
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: check echo
-        run: echo ${{github.token}}
-        run: echo ${{secrets.GITHUB_TOKEN}}
