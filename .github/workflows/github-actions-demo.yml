@@ -16,3 +16,6 @@ jobs:
           file: doc/api.yml
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - name: check echo
+        run: echo ${{github.token}}
+        run: echo ${{secrets.GITHUB_TOKEN}}
