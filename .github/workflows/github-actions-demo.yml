@@ -1,18 +1,16 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  api-diff:
-    name: Check API diff
+  update-doc:
+    name: update theneo doc
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Comment pull request with API diff
+      - name: upload file to server
         uses: atirnayab/test-ci-cd@main
         with:
           doc: doc/api.yml
-          token: ${{secrets.GITHUB_TOKEN}}
-          file: doc/api.yml
-          testtoken: ${{secrets.TESTTOKEN}}
-          testtoken2: ${{env.TESTTOKEN}}
+          key: ${{secrets.KEY}}
+          secret: ${{secrets.SECRET}}
