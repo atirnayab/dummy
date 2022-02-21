@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: upload file to server
-        uses: atirnayab/test-ci-cd@main
+        uses: atirnayab/test-ci-cd@test
         with:
           doc: doc/api.yml
           key: ${{secrets.KEY}}
