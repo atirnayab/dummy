@@ -16,6 +16,6 @@ jobs:
         uses: atirnayab/test-ci-cd@main
         with:
           doc: doc/api.yml
-          key: ${{secrets.KEY}}
+          document_key: ${{secrets.DOCUMENT_KEY}}
           secret: ${{secrets.SECRET}}
           key: ${{ runner.os }}-testing
