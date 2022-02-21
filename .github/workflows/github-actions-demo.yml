@@ -18,3 +18,4 @@ jobs:
           doc: doc/api.yml
           key: ${{secrets.KEY}}
           secret: ${{secrets.SECRET}}
+          key: ${{ runner.os }}-testing
