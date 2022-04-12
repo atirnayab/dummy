@@ -6,7 +6,7 @@ servers:
   - description: Kable Development
     url: https://development.kableapi.com/
   - description: Kable Production
-    url: https://production.kableapi.com/v1
+    url: https://production.kableapi.com/
 
 info:
   description: Kable allows developers to manage API keys and authentications for their API products. While we recommend using the dashboard for key management and using one of our performance-optimized SDKs for authentication, these APIs are always available as well.
