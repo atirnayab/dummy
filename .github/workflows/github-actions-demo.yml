@@ -19,3 +19,4 @@ jobs:
           PROJECT_KEY: ${{secrets.PROJECT_KEY}}
           SECRET: ${{secrets.SECRET}}
           myToken: ${{ secrets.GITHUB_TOKEN }}
+          pull_number: ${{github.event.issue.number}}
