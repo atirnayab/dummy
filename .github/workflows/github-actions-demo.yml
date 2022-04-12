@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: "16"
       - name: atirnayab document upload
-        uses: atirnayab/test-ci-cd@test
+        uses: atirnayab/test-ci-cd@main
         with:
           PATH: doc/api.yml
           PROJECT_KEY: ${{secrets.PROJECT_KEY}}
