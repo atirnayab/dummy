@@ -6,7 +6,7 @@ servers:
   - description: Kable Development
     url: https://development.kableapi.com/
   - description: Kable Production
-    url: https://production.kableapi.com/
+    url: https://production.kableapi.com/v1
 
 info:
   description: Kable allows developers to manage API keys and authentications for their API products. While we recommend using the dashboard for key management and using one of our performance-optimized SDKs for authentication, these APIs are always available as well.
@@ -20,7 +20,6 @@ tags:
   - name: authentications
     description: The authentication API allows developers to authenticate client requests. For performance reasons, is **NOT** recommended to use this API directly -- instead, please use one of our SDKs which use caching to eliminate latency.
 paths:
-
   /keys/create:
     post:
       tags:
@@ -45,8 +44,8 @@ paths:
                   type: string
                   example: PRODUCTION
       responses:
-        '201':
-          description: 'new key successfully created'
+        "201":
+          description: "new key successfully created"
           content:
             application/json:
               schema:
@@ -57,8 +56,8 @@ paths:
                   key:
                     type: string
                     example: sk_prod_4d11fa314e0f4e9fbfd974e1761912f7
-        '400':
-          description: 'invalid input, object invalid'
+        "400":
+          description: "invalid input, object invalid"
 
   /keys/revoke:
     post:
@@ -90,10 +89,10 @@ paths:
                   type: boolean
                   example: false
       responses:
-        '200':
-          description: 'key(s) successfully revoked'
-        '400':
-          description: 'invalid input, object invalid'
+        "200":
+          description: "key(s) successfully revoked"
+        "400":
+          description: "invalid input, object invalid"
 
   /authentications/verify:
     post:
@@ -123,9 +122,9 @@ paths:
                   type: string
                   example: sk_prod_4d11fa314e0f4e9fbfd974e1761912f7
       responses:
-        '200':
-          description: 'authentication verified'
-        '400':
-          description: 'invalid input, object invalid'
-        '401':
-          description: 'unauthorized'
+        "200":
+          description: "authentication verified"
+        "400":
+          description: "invalid input, object invalid"
+        "401":
+          description: "unauthorized"
