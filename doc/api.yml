@@ -11,7 +11,7 @@ servers:
 info:
   description: Kable allows developers to manage API keys and authentications for their API products. While we recommend using the dashboard for key management and using one of our performance-optimized SDKs for authentication, these APIs are always available as well.
   version: 2.0.1
-  title: Kable API
+  title: Kable APIs
   contact:
     email: contact@kableapi.com
 tags:
